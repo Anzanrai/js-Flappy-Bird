@@ -22,17 +22,20 @@ function Bird(parentElement){
 		this.birdDiv.appendChild(this.birdImage);
 		this.birdImage.setAttribute('src','images/bird.gif');
 		this.birdImage.style.height = '100%';
-		this.birdImage.style.width = '100%';		
+		this.birdImage.style.width = '100%';
+				
 	}
 
 	this.update = function(direction){
 		this.y += 10;
 		this.birdDiv.style.top = this.y*direction+'px';
+		
 	}
 
 	this.jump = function(){
 		this.y-=2*BIRD_HEIGHT;
 		this.birdDiv.style.top = this.y +'px';
+		
 	}
 	this.dead = function(){
 		this.dyeInterval =setInterval(function(){

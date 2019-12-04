@@ -1,6 +1,7 @@
 var GAME_HEIGHT = 700;
 var GAME_WIDTH = 500;
 var parent = document.getElementById('game');
+var parent2 = document.getElementById('game1');
 var WALL_HEIGHT = 100;
 var POLE_DIFF = 3.5*BIRD_HEIGHT;
 
@@ -196,3 +197,5 @@ function Game(parentElement){
 
 var game = new Game(parent);
 game.create();
+var game1 = new Game(parent2);
+game1.create();
